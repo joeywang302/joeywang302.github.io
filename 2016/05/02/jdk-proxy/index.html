@@ -3,17 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Joey&#39;s Blog</title>
+  <title>理解JDK中的动态代理实现 | Joey&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="joey blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Joey's Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="参考资料[1] JDK动态代理实现原理[2] java动态代理（JDK和cglib）
+代理模式是常用的设计模式之一，在代理模式中代理类与委托类实现相同的接口，对外暴露代理类，代理类可以在直接调用委托类代码之前为其进行额外的处理，包括事前与事后处理。代理模式的实现可以分为两种，一种是静态代理，一种是动态代理。
+1. 静态代理静态代理比较简单，在编译完成后从生成的字节码中就确定了代理类的实现。
+1.1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="理解JDK中的动态代理实现">
+<meta property="og:url" content="http://yoursite.com/2016/05/02/jdk-proxy/index.html">
 <meta property="og:site_name" content="Joey's Blog">
-<meta property="og:description" content="joey blog">
+<meta property="og:description" content="参考资料[1] JDK动态代理实现原理[2] java动态代理（JDK和cglib）
+代理模式是常用的设计模式之一，在代理模式中代理类与委托类实现相同的接口，对外暴露代理类，代理类可以在直接调用委托类代码之前为其进行额外的处理，包括事前与事后处理。代理模式的实现可以分为两种，一种是静态代理，一种是动态代理。
+1. 静态代理静态代理比较简单，在编译完成后从生成的字节码中就确定了代理类的实现。
+1.1">
+<meta property="og:updated_time" content="2016-05-02T15:02:29.946Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Joey's Blog">
-<meta name="twitter:description" content="joey blog">
+<meta name="twitter:title" content="理解JDK中的动态代理实现">
+<meta name="twitter:description" content="参考资料[1] JDK动态代理实现原理[2] java动态代理（JDK和cglib）
+代理模式是常用的设计模式之一，在代理模式中代理类与委托类实现相同的接口，对外暴露代理类，代理类可以在直接调用委托类代码之前为其进行额外的处理，包括事前与事后处理。代理模式的实现可以分为两种，一种是静态代理，一种是动态代理。
+1. 静态代理静态代理比较简单，在编译完成后从生成的字节码中就确定了代理类的实现。
+1.1">
   
     <link rel="alternate" href="/atom.xml" title="Joey&#39;s Blog" type="application/atom+xml">
   
@@ -66,9 +76,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-jdk-proxy" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-jdk-proxy" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/05/02/jdk-proxy/" class="article-date">
   <time datetime="2016-05-02T14:29:46.000Z" itemprop="datePublished">2016-05-02</time>
@@ -81,8 +89,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/02/jdk-proxy/">理解JDK中的动态代理实现</a>
+    <h1 class="article-title" itemprop="name">
+      理解JDK中的动态代理实现
     </h1>
   
 
@@ -174,10 +182,9 @@
     </footer>
   </div>
   
-</article>
-
-
+    
   
+</article>
 
 </section>
         
